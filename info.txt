@@ -1,2 +1,16 @@
 ver html responsive...
 ver tareas  a realizar
+
+15:31 11/11/2025
+BASE DE DATOS EN DOCKER:
+
+postgres=# \c dante_db
+You are now connected to database "dante_db" as user "postgres".
+dante_db=# \d
+Did not find any relations.
+dante_db=# CREATE TABLE user_table (id SERIAL PRIMARY KEY, NOMBRE VARCHAR(20), APELLIDO VARCHAR(30), TELEFONO NUMERIC(15), FECHA_ENTRE
+GA TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FECHA_DEVOLUCION TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE
+dante_db=#
+
+dante_db=# INSERT INTO user_table (NOMBRE, APELLIDO, TELEFONO) VALUES ('Adrian', 'Olmedo', 4220608);
